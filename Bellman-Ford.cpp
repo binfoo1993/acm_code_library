@@ -47,8 +47,7 @@ struct bellmanford
                     p[e.to] = g[u][i];
                     if(!inq[e.to])
                     {
-                        qu.push(e.to); 
-                        inq[e.to] = true;
+                        qu.push(e.to); inq[e.to] = true;
                         if(++cnt[e.to] >= n) return true;
                     }
                 }
