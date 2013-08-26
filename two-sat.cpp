@@ -11,8 +11,7 @@ struct twosat
         if(mark[x]) return true;
         mark[x] = true;
         s[c++] = x;
-        for(int i = 0; i < g[x].size(); ++i)
-            if(!dfs(g[x][i])) return false;
+        for(int i = 0; i < g[x].size(); ++i) if(!dfs(g[x][i])) return false;
         return true;
     }
     
