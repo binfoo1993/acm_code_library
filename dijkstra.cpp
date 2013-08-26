@@ -18,8 +18,7 @@ struct dijkstra
     vector<edge> edges;
     vector<int> g[maxn];
     bool done[maxn];
-    int d[maxn];
-    int p[maxn];
+    int d[maxn], p[maxn];
     
     void init(int n)
     {
